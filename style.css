@@ -1,0 +1,85 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+    box-sizing: border-box;
+    height: 100%;
+    background-color: #f7f7f7;
+    overflow-x: hidden;
+  }
+  
+  .container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+  }
+  
+  .container .stock {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-image: url('stock photo.jpg');
+    background-size: cover;
+    background-position: center;
+    z-index: 1;
+  }
+  
+  .content {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    z-index: 2;
+    text-align: center;
+    position: relative;
+  }
+  
+  .content h1 {
+    font-family: 'Impact', Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 4rem; /* Slightly larger for emphasis */
+    color: #f8f8f8; /* A more vibrant red */
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    letter-spacing: 0.05em; /* Adds spacing between letters */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Adds subtle shadow for depth */
+    transition: color 0.3s ease-in-out, text-shadow 0.3s ease-in-out; /* Smooth transition on hover */
+  }
+  
+  .content h1:hover {
+    color: #a94442; /* Darker shade of red on hover */
+    text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5); /* More intense shadow on hover */
+  }
+  
+  
+  #myquotes {
+    width: 60%;
+    height: auto;
+    padding: 20px;
+    font-size: 2rem;
+    color: #fff;
+    background-color: rgba(28, 28, 38, 0.8);
+    border-radius: 15px;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+    transition: box-shadow 0.3s ease;
+  }
+  
+  #myquotes:hover {
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.5);
+  }
+  
+  /* Responsive design for smaller screens */
+  @media (max-width: 768px) {
+    .content h1 {
+      font-size: 2.5rem;
+    }
+  
+    #myquotes {
+      width: 80%;
+      font-size: 1.5rem;
+      padding: 20px;
+    }
+  }
+  
